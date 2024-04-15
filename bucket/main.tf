@@ -14,8 +14,8 @@ provider "aws" {
 
   default_tags {
     tags = {
-      owner      = var.owner
-      managed-by = var.managed_by
+      owner      = local.common_tags.name
+      managed-by = local.common_tags.managed-by
     }
   }
 }
